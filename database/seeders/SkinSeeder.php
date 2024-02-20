@@ -59,6 +59,18 @@ class SkinSeeder extends Seeder
                 'precio_recomendado' => 1655.59,
             ],
         ]);
+
+        DB::table('users')->insert([
+            [
+                'name' => 'admin',
+                'email' => 'admin@admin',
+                'email_verified_at' => null,
+                'password' => '$2y$12$oUpIlAJ6KgdcO3RpR6yTkePAz97Fi0957HkxFmTv.2yRAxs8kM0HS',
+                'remember_token' => null,
+                'created_at' => '2024-02-20 08:29:17',
+                'updated_at' => '2024-02-20 08:29:17',
+            ]
+        ]);
     }
 
 
